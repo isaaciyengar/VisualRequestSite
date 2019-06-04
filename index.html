@@ -17,12 +17,27 @@
       <a href="javascript:sick()" class="a a4"> <i class="fa fa-stethoscope"></i> &nbsp Sick</a>
 </div>
     
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.467.0.min.js"></script>
     
 <script>
+AWS.config.region = 'us-east-1'; // Region
+AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+    IdentityPoolId: 'us-east-1:2316ea0a-baaa-4f7d-8496-46818e3cff92',
+});
+    
 function hungry() {
 var audio = new Audio('assets/Hungry.mp3');
+var params = {
+  Message: 'TEXT_MESSAGE', /* required */
+  PhoneNumber: '5715810512',
+};
+
+// Create promise and SNS service object
+var publishTextPromise = new AWS.SNS({apiVersion: '2010-03-31'}).publish(params).promise();
+    
 audio.play();
 }
+    
     function bathroom() {
 var audio = new Audio('assets/bathroom-2.mp3');
 audio.play();
