@@ -28,8 +28,8 @@ AWS.config.credentials = new AWS.CognitoIdentityCredentials({
 function hungry() {
 var audio = new Audio('assets/Hungry.mp3');
 var params = {
-  Message: 'TEXT_MESSAGE', /* required */
-  PhoneNumber: '+15715810512',
+  Message: 'Hungry', /* required */
+  PhoneNumber: '+1XXXXXXXXX',
 };
 
 // Create promise and SNS service object
@@ -40,18 +40,46 @@ audio.play();
     
     function bathroom() {
 var audio = new Audio('assets/bathroom-2.mp3');
+        var params = {
+  Message: 'Bathroom', /* required */
+  PhoneNumber: '+1XXXXXXXXX',
+};
+
+// Create promise and SNS service object
+var publishTextPromise = new AWS.SNS({apiVersion: '2010-03-31'}).publish(params).promise();
 audio.play();
 }
     function thirsty() {
 var audio = new Audio('assets/Thirsty.mp3');
+        var params = {
+  Message: 'Thirsty', /* required */
+  PhoneNumber: '+1XXXXXXXXX',
+};
+
+// Create promise and SNS service object
+var publishTextPromise = new AWS.SNS({apiVersion: '2010-03-31'}).publish(params).promise();
 audio.play();
 }
     function bed() {
 var audio = new Audio('assets/Bed.mp3');
+        var params = {
+  Message: 'Sleepy', /* required */
+  PhoneNumber: '+1XXXXXXXXX',
+};
+
+// Create promise and SNS service object
+var publishTextPromise = new AWS.SNS({apiVersion: '2010-03-31'}).publish(params).promise();
 audio.play();
 }
     function sick() {
 var audio = new Audio('assets/Sick.mp3');
+        var params = {
+  Message: 'Feeling Sick', /* required */
+  PhoneNumber: '+1XXXXXXXXX',
+};
+
+// Create promise and SNS service object
+var publishTextPromise = new AWS.SNS({apiVersion: '2010-03-31'}).publish(params).promise();
 audio.play();
 }
 </script>
