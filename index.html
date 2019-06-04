@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    		<link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title></title>
+</head>
+<body>
+    
+<div class="button-area">
+  <a href="javascript:hungry()" class="a a0"> <i class="fa fa-cutlery"></i> &nbsp Hungry</a>
+      <a href="javascript:bathroom()" class="a a1"> <i class="fa fa-bath"></i> &nbsp Bathroom</a>
+      <a href="javascript:thirsty()" class="a a2"> <i class="fa fa-coffee"></i> &nbsp Thirsty</a>
+      <a href="javascript:bed()" class="a a3"> <i class="fa fa-bed"></i> &nbsp Bed</a>
+      <a href="javascript:sick()" class="a a4"> <i class="fa fa-stethoscope"></i> &nbsp Sick</a>
+</div>
+    
+    
+<script>
+function hungry() {
+var audio = new Audio('assets/Hungry.mp3');
+audio.play();
+}
+    function bathroom() {
+var audio = new Audio('assets/bathroom-2.mp3');
+audio.play();
+}
+    function thirsty() {
+var audio = new Audio('assets/Thirsty.mp3');
+audio.play();
+}
+    function bed() {
+var audio = new Audio('assets/Bed.mp3');
+audio.play();
+}
+    function sick() {
+var audio = new Audio('assets/Sick.mp3');
+audio.play();
+}
+</script>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,92 @@
+@import url("font-awesome.min.css");
+
+h3 {
+  text-align: center;
+  max-width: 320px;
+}
+
+.button-area {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+.button-area a {
+  padding: 1em 2.4em;
+  font-size: 1.5em;
+  margin: .8em;
+  color: black;
+  text-decoration: none;
+  font-family: FontAwesome, Helvetica;
+  flex-grow: 1;
+  text-align: center;
+    border-radius: 20px;
+    
+		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+}
+
+
+
+.a0 {
+  background-color: #FF8385;
+}
+
+a0:hover,
+.a0:hover {
+color: #000;
+background: #F8C0C1;
+}
+
+.a1 {
+  background-color: #FCAF76;
+}
+a1:hover,
+.a1:hover {
+color: #000;
+background-color: #FFE9D9;
+}
+
+.a2 {
+  background-color: #F1EF71;
+}
+a2:hover,
+.a2:hover {
+color: #000;
+background: #FFFD7F;
+}
+
+.a3 {
+  background-color: #91E18D;
+}
+a3:hover,
+.a3:hover {
+color: #000;
+background: #BAEFB7;
+}
+
+.a4 {
+  background-color: #9FB9D6;
+}
+a4:hover,
+.a4:hover {
+color: #000;
+background: #CAD9EA;
+}
+
+.a5 {
+  background-color: blueviolet;
+}
+a5:hover,
+.a5:hover {
+color: #fff;
+background: #ef8376;
+}
+
+.a6 {
+  background-color: blueviolet;
+}
